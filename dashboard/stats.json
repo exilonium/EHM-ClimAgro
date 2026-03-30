@@ -1,0 +1,72 @@
+{
+  "dashboard_title": "ClimAgro Impact Dashboard",
+  "last_updated": "2026-03-29",
+  "metrics": [
+    {
+      "id": "districts",
+      "label": "Districts Covered",
+      "value": 718,
+      "unit": "",
+      "icon": "🗺️",
+      "description": "Active agricultural districts across India",
+      "trend": "+12% from last season",
+      "trend_positive": true,
+      "color": "#2d6a4f"
+    },
+    {
+      "id": "farmers",
+      "label": "Farmers Enrolled",
+      "value": 2400000,
+      "unit": "",
+      "icon": "🌾",
+      "description": "Smallholder farmers using ClimAgro advisories",
+      "trend": "+18% year-over-year",
+      "trend_positive": true,
+      "color": "#40916c"
+    },
+    {
+      "id": "crop_yield",
+      "label": "Avg. Yield Improvement",
+      "value": 23,
+      "unit": "%",
+      "icon": "📈",
+      "description": "Increase in crop yield with AI-guided decisions",
+      "trend": "+3% vs previous year",
+      "trend_positive": true,
+      "color": "#52b788"
+    },
+    {
+      "id": "water_saved",
+      "label": "Water Saved",
+      "value": 34,
+      "unit": "Bn L",
+      "icon": "💧",
+      "description": "Litres of irrigation water conserved annually",
+      "trend": "Efficient by design",
+      "trend_positive": true,
+      "color": "#1e6091"
+    },
+    {
+      "id": "alerts_sent",
+      "label": "Climate Alerts Sent",
+      "value": 9800000,
+      "unit": "",
+      "icon": "🌦️",
+      "description": "Hyper-local weather advisories delivered to farmers",
+      "trend": "Last 12 months",
+      "trend_positive": true,
+      "color": "#e07b00"
+    },
+    {
+      "id": "states",
+      "label": "States & UTs",
+      "value": 28,
+      "unit": "",
+      "icon": "📍",
+      "description": "Indian states actively partnered with ClimAgro",
+      "trend": "Full national coverage",
+      "trend_positive": true,
+      "color": "#6d4c9f"
+    }
+  ]
+}
