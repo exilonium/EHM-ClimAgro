@@ -1,0 +1,134 @@
+body {
+  overflow-x:hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+.offerings-section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #f0fdfa, #ccfbf1, #f0fdfa);
+  box-sizing:border-box;
+}
+
+.offerings-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .offerings-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .offerings-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.offering-card {
+  position: relative;
+  height: 20rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+
+  transition: all 0.5s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.offering-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+}
+
+.offering-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.5),
+    transparent
+  );
+
+  opacity: 0.85;
+  transition: all 0.5s cubic-bezier(.4, 0, .2, 1);
+}
+
+.offering-card:hover .offering-overlay {
+  opacity: 1;
+}
+
+.offering-content {
+  position: absolute;
+  bottom: 0;
+  padding: 1.5rem;
+  color: #fff;
+  width: 100%;
+  z-index: 2;
+}
+
+.offering-title {
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.5s cubic-bezier(.4, 0, .2, 1);
+}
+
+.offering-card:hover .offering-title {
+  font-size: 1.25rem;
+}
+
+.offering-paragraph {
+  font-size: 0.875rem;
+  color: #e5e7eb;
+
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+
+  transition: all 0.5s cubic-bezier(.4, 0, .2, 1);
+}
+
+.offering-card:hover .offering-paragraph {
+  max-height: 6rem;
+  opacity: 1;
+  margin-top: 0.5rem;
+}
+
+.offering-btn {
+  background: #fff;
+  color: #111827;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  border: none;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-size: 0.875rem;
+  font-weight: 500;
+
+  margin-top: 0.75rem;
+
+  transform: translateY(10px);
+  opacity: 0;
+
+  transition: all 0.3s cubic-bezier(.4, 0, .2, 1);
+}
+
+.offering-card:hover .offering-btn {
+  transform: translateY(0);
+  opacity: 1;
+}
