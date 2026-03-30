@@ -26,3 +26,7 @@ To serve stuff to a global audience efficiently:
 - **Enable Brotli/Gzip compression** - it can reduce the network load drastically as less data neeeds to be transferred, its usually enabled by default.
 - **Use cache-busting via filename hashing** - Append a hash to filenames (e.g., `report.67690.js`) so updates only invalidate changed files without nuking everything.
 - **Preload critical assets** - Add `<link rel="preload">` so the web-browser fetches important stuff in parallel.
+
+---
+
+tw : git rebase kinda jorked my commit history timestamps.
